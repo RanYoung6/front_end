@@ -1,0 +1,135 @@
+*{
+	/*重置样式*/
+	margin:0;
+	padding: 0;
+}
+/*标签选择器*/
+body{
+	background: url(../img/2.jpg);
+}
+/*id选择器*/
+#mtl{
+	width:768px;
+	height:768px;
+	background: url(../img/fsw.png);
+	/*定位属性*/
+	position: absolute;
+	/*水平居中*/
+	left: 50%;
+	margin-left: -384px;
+	animation: rotate 20s linear infinite;
+}
+/*类选择器*/
+.bracket{
+	width: 358px;
+	height: 529px;
+	background: url(../img/bracket.png);
+	position: absolute;
+	/*水平居中*/
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: -300px;
+}
+#tpd{
+	width:48px;
+	height: 64px;
+	background: url(../img/arrow.png);
+	position: absolute;
+	/*水平居中*/
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 70px;
+}
+div:nth-child(6){
+	width:577px;
+	height: 257px;
+	background: url(../img/big-title.png);
+	position: absolute;
+	/*水平居中*/
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 150px;
+}
+#tp{
+	width:413px;
+	height: 139px;
+	background: url(../img/title.png);
+	position: absolute;
+	/*水平居中*/
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 70px;
+}
+#mtl ul li{
+	width: 130px;
+	height: 170px;
+	list-style: none;
+	position: absolute;
+	animation: hh 20s linear infinite;
+	
+}
+@keyframes hh{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-360deg);}
+}
+li:nth-child(1){
+	background: url(../img/boy.png);
+	left: 610px;
+	top: 170px;
+}
+li:nth-child(2){
+	background: url(../img/dog.png);
+	left: 630px;
+	top: 380px;
+}
+li:nth-child(3){
+	background: url(../img/hairboy.png);
+		left: 200px;
+	bottom: 10px;
+}
+li:nth-child(4){
+	background: url(../img/shamegirl.png);
+		left: 470px;
+	bottom: 10px;
+}
+li:nth-child(5){
+	background: url(../img/mudog.png);
+		left:0px;
+		top: 450px;
+}
+li:nth-child(6){
+	background: url(../img/mimi.png);
+		left: 30px;
+	top: 170px;
+}
+li:nth-child(7){
+	background: url(../img/girl.png);
+		left: 200px;
+	top: -5px;
+}
+
+li:nth-child(8){
+	background: url(../img/girls.png);
+		left: 420px;
+	top: -5px;
+}
+#sm{
+	width:247px;
+	height: 498px;
+	background: url(../img/bracketsmall.png);
+	position: absolute;
+	/*水平居中*/
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: -300px;/*嵌套设置，如果不是嵌套设置则是-300*/
+}
+
+@keyframes rotate{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
